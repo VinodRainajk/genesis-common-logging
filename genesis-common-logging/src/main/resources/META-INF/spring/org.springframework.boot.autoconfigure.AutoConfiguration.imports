@@ -1,0 +1,2 @@
+genesis.common.logging.TrackingAutoConfiguration
+genesis.common.logging.kafka.TrackingKafkaAutoConfiguration

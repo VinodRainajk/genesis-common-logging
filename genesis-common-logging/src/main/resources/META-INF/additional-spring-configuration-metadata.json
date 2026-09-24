@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "name": "genesis.logging.pattern.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Apply the library log pattern (timestamp, level, service, logger, trackingId, message).",
+      "defaultValue": true
+    },
+    {
+      "name": "genesis.logging.header.enabled",
+      "type": "java.lang.Boolean",
+      "description": "If true, the HTTP filter inits trackingId from allow-listed headers.",
+      "defaultValue": false
+    },
+    {
+      "name": "genesis.logging.header.fields",
+      "type": "java.util.List<java.lang.String>",
+      "description": "HTTP header allow-list. First non-blank wins. Unlisted headers are ignored."
+    },
+    {
+      "name": "genesis.logging.header.path-patterns",
+      "type": "java.util.List<java.lang.String>",
+      "description": "Optional Ant path patterns. Empty means all URLs when header tracking is enabled."
+    },
+    {
+      "name": "genesis.logging.kafka.header.enabled",
+      "type": "java.lang.Boolean",
+      "description": "If true, the record interceptor inits trackingId from allow-listed Kafka headers.",
+      "defaultValue": false
+    },
+    {
+      "name": "genesis.logging.kafka.header.fields",
+      "type": "java.util.List<java.lang.String>",
+      "description": "Kafka header allow-list for record listeners. First non-blank wins."
+    }
+  ]
+}
